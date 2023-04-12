@@ -1,0 +1,47 @@
+<meta charset="UTF-8"> 
+
+<h3>¿Alcohol o Gasolina?</h3>
+
+<h4>El auto tiene 40 litros, para que se vacie el tanque se recorren 480 km</h4>
+
+<script>
+    var distancia = 480;
+    var litros =  40;
+    var distanciaAlcohol = 300;
+
+    consumo =  distancia/ litros
+    consumo1 = distanciaAlcohol/ litros
+
+    document.write("el resultao es : " +  Math.round(consumo) + " kilometros por litro" );
+
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("al usar alcohol el auto recorre : " + Math.round(consumo1) + " Kilometros por litro " );
+
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    //segundo ejercicio
+
+    document.write("segundo ejercicio");
+    document.write("<br>");
+    document.write("<br>");
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+    }
+
+    var miEdad = 28;
+    var edadHermano = 34;
+
+    imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
+
+
+</script>

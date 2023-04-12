@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>tabla de multipicar </h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    function imprimir(frase) {
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
+    }
+    /*var numero = 8; 
+    var numeroMultiplicar = 1  //=parseInt(prompt("por cual numero quieres la tabla"))
+
+
+    while (numeroMultiplicar <= 100) { 
+        imprimir(numero * numeroMultiplicar);
+        numeroMultiplicar = numero + 1; 
+    } */
+
+
+
+// ahora se puede usar un for para no hacer tanto con el while 
+ var numero  = parseInt(prompt("por cual numero quieres la tabla"))
+ for (var numeroMultiplicar = 1; numeroMultiplicar <= 10;numeroMultiplicar++){
+    //aqui va el mensaje para mostrar el resultado 
+    imprimir(numero * numeroMultiplicar); 
+ }
+</script>

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>Adivinacion shaka laka laka</h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    function imprimir(frase) {
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
+    }
+
+    var añoMundial = 1930;
+    //aqui se hace que se repita esta regla hasta que se cumpla lo que esta dentro del parentecis
+    var limite = parseInt(prompt("Ingrese el año desde donde quieres caldular el mundial"))
+    //se personaliza para tener interaccion del cliente
+    while (añoMundial < limite ) {
+
+        alert("hubo mundial de la FIFA en el año " + añoMundial);
+        //se agrega cada cuanto contar el valor de añoMundial
+        añoMundial = añoMundial + 4;
+
+    }
+    alert("fin")
+</script>

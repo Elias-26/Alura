@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Adivinacion shaka laka laka</h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    var intentos = 3;
+    var contador = 1;
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada = prompt("Ingrese su contraseña");
+   
+   
+    while (contador <= intentos) {
+        
+    if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        break;
+    } else {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+    }
+
+}
+</script>

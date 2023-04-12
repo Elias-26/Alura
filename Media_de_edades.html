@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<h1>tabla de multipicar </h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    function imprimir(frase) {
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
+    }
+
+
+
+
+   /* var edadPadre = 41;
+    var edadMadre = 38;
+    var edadHija = 15;
+    var edadHijo = 12;
+
+    var familia = edadHija + edadHijo + edadPadre + edadMadre; 
+
+    var edadMedia = familia / 4;
+
+    imprimir("la media de las edad de la familia es de : "edadMedia); 
+
+    */
+        //ahora usaremos while para mejorar el coddigo por si son muchos integrantes en la familia 
+
+
+        var familia = parseInt(prompt("ingresa cuntas personas conforman tu familia"));
+        var contador = 1; // el contador siempre debe de ir en +1 o ++ 
+        var totalEdades = 0; 
+
+
+        while(contador <= familia) {
+
+            var totalEdades = 0
+            edad = parseInt(prompt("ingrese la edad del familiar"));
+            totalEdades = totalEdades + edad;
+            contador++;
+        }
+
+        mediaEdades = totalEdades/familia;
+
+        imprimir("el promedio de las edades de tu familia es de " + mediaEdades )
+</script>
